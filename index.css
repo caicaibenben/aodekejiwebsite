@@ -1,0 +1,28 @@
+.imgwh{
+    width: 100%;
+    left: 0px;
+    margin-top: 50px;
+}
+.index_block_img {
+    margin-top: 40px;
+}
+.overflow-hid {
+    overflow: hidden;
+}
+.index_news {
+    width: 100%;
+    color: #333333;
+}
+.index_news ul {
+    margin-top: 12px;
+    padding-left: 14px;
+}
+.index_news li {
+    margin-top: 12px;
+    padding-left: 14px;
+}
+.index_news li span {
+    color: #333333;
+    font-size: 18px;
+    font-family: 'FZLTXHJW';
+}
