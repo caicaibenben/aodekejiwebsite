@@ -32,7 +32,7 @@
                        "北京"=>array("朝阳","海淀"),
                        "雄县"
                    );
-                   echo count($chargeSite);
+
                 ?>
                 <li><a href="javascript:;">北京</a></li>
                 <li class="dropdown-submenu ">

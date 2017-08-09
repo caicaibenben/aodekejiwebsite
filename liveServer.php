@@ -143,21 +143,41 @@
                                     全部
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                                    <li><a href="javascript:;">北京</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a tabindex="-1" href="javascript:;">山东</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a tabindex="-1" href="javascript:;">济南</a></li>
-                                            <li class="dropdown-submenu">
-                                                <a href="javascript:;">临沂</a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="javascript:;">河东</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <ul class="dropdown-menu multi-level " role="menu" aria-labelledby="dropdownMenu">
+                                    <?php
+                                    $chargeSite = array(
+                                        "山东" => array(
+                                            "济南" => array("历城", "历下"),
+                                            "济宁" => array("曲阜"),
+                                            "临沂" => array("兰山", "河东", "罗庄"),
+                                        ),
+                                        "河南" => array(
+                                            "开封" => array("鼓楼", "兰考"),
+                                        ),
+                                        "北京" => array("朝阳", "海淀"),
+                                        "雄县"
+                                    );
+                                    foreach ($chargeSite as $keySheng => $sheng) {
+                                        if (is_array($sheng)) {
+                                            echo '<li class="dropdown-submenu "><a href="javascript:;">'.$keySheng . '</a><ul class="dropdown-menu ">';
+                                            foreach ($sheng as $keyShi => $shi) {
+                                                if (is_array($shi)) {
+                                                    echo '<li class="dropdown-submenu "><a href="javascript:;">'.$keyShi.'</a><ul class="dropdown-menu ">';
+                                                    foreach ($shi as $keyXian => $xian) {
+                                                        echo '<li><a href="javascript:;">'.$xian.'</a></li>';
+                                                    }
+                                                    echo '</ul></li>';
+                                                } else {
+                                                    echo '<li><a  href="javascript:;">'.$shi.'</a></li>';
+                                                }
+
+                                            }
+                                            echo '</ul></li>';
+                                        } else {
+                                            echo '<li><a href="javascript:;">'.$sheng.'</a></li>';
+                                        }
+                                    }
+                                    ?>
                             </div><!-- /btn-group -->
                             <input type="text" class="form-control" placeholder="请输入你要查询的站点">
                             <span class="input-group-btn">
@@ -172,7 +192,7 @@
             <!--站点列表-->
             <div style="margin-top: 100px">
                 <div class="list-group">
-                    <a href="#" class="list-group-item active " data-toggle="collapse"
+                    <a href="javascript:;" class="list-group-item active " data-toggle="collapse"
                        data-target="#demo0">
                         <h4 class="list-group-item-heading">
                             紫禁城小区
@@ -182,7 +202,7 @@
                         详细地址：1111111111111111111111111111111111111
                         11111111111111111111111111111111111111111111111
                     </div>
-                    <a href="#" class="list-group-item active " data-toggle="collapse"
+                    <a href="javascript:;" class="list-group-item active " data-toggle="collapse"
                        data-target="#demo1">
                         <h4 class="list-group-item-heading">
                             紫禁城小区
@@ -192,7 +212,7 @@
                         详细地址：1111111111111111111111111111111111111
                         11111111111111111111111111111111111111111111111
                     </div>
-                    <a href="#" class="list-group-item " data-toggle="collapse"
+                    <a href="javascript:;" class="list-group-item " data-toggle="collapse"
                        data-target="#demo2">
                         <h4 class="list-group-item-heading">
                             紫禁城小区
@@ -202,7 +222,7 @@
                         详细地址：1111111111111111111111111111111111111
                         11111111111111111111111111111111111111111111111
                     </div>
-                    <a href="#" class="list-group-item" data-toggle="collapse"
+                    <a href="javascript:;" class="list-group-item" data-toggle="collapse"
                        data-target="#demo3">
                         <h4 class="list-group-item-heading">
                             紫禁城小区
