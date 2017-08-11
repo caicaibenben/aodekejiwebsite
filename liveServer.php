@@ -7,8 +7,6 @@
     <title>奥德科技有限公司</title>
     <link type="image/x-icon" href="" rel="icon">
     <link href="image/ico.png" rel="shortcut icon">
-    <link rel="stylesheet" href="LiveServer.css" type="text/css">
-    <link rel="stylesheet" href="base.css" type="text/css">
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- 可选的Bootstrap主题文件（一般不使用） -->
@@ -18,6 +16,8 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="LiveServer.js"></script>
+    <link rel="stylesheet" href="LiveServer.css" type="text/css">
+    <link rel="stylesheet" href="base.css" type="text/css">
 </head>
 <body>
 <!--1.首页标签-->

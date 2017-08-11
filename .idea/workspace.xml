@@ -20,32 +20,34 @@
     <favorites_list name="aodekejiwebsite" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="liveServer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/liveServer.php">
+    <leaf>
+      <file leaf-file-name="Test.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="220">
+              <caret line="187" column="43" selection-start-line="187" selection-start-column="43" selection-end-line="187" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecondTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SecondTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base.css">
+      <file leaf-file-name="Test.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LiveServer.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LiveServer.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="138" column="20" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
+            <state relative-caret-position="502">
+              <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -79,14 +81,14 @@
         <option value="$PROJECT_DIR$/LiveServer.js" />
         <option value="$PROJECT_DIR$/Test.js" />
         <option value="$PROJECT_DIR$/image/SecondTest.js" />
-        <option value="$PROJECT_DIR$/Test.css" />
-        <option value="$PROJECT_DIR$/Test.php" />
-        <option value="$PROJECT_DIR$/SecondTest.css" />
         <option value="$PROJECT_DIR$/RawTest.css" />
-        <option value="$PROJECT_DIR$/SecondTest.php" />
         <option value="$PROJECT_DIR$/RawTest.php" />
-        <option value="$PROJECT_DIR$/liveServer.php" />
+        <option value="$PROJECT_DIR$/SecondTest.css" />
         <option value="$PROJECT_DIR$/LiveServer.css" />
+        <option value="$PROJECT_DIR$/liveServer.php" />
+        <option value="$PROJECT_DIR$/Test.css" />
+        <option value="$PROJECT_DIR$/SecondTest.php" />
+        <option value="$PROJECT_DIR$/Test.php" />
       </list>
     </option>
   </component>
@@ -101,10 +103,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="-69" />
+    <option name="y" value="54" />
+    <option name="width" value="1612" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -137,7 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -156,23 +158,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aodekejiwebsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aodekejiwebsite" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,7 +171,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.liveServer.php">
+  <component name="RunManager" selected="JavaScript Debug.Test.php">
     <configuration default="false" name="Test.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/aodekejiwebsite/Test.php">
       <method />
     </configuration>
@@ -260,10 +248,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.liveServer.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.RawTest.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.SecondTest.php" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.Test.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Test.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.SecondTest.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.liveServer.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.RawTest.php" />
         <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.12.php" />
       </list>
     </recent_temporary>
@@ -289,11 +277,13 @@
       <workItem from="1502154554569" duration="21237000" />
       <workItem from="1502237840710" duration="20779000" />
       <workItem from="1502283689799" duration="3520000" />
+      <workItem from="1502326055279" duration="9228000" />
+      <workItem from="1502432057227" duration="11652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111216000" />
+    <option name="totallyTimeSpent" value="132096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -305,10 +295,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-69" y="54" width="1612" height="886" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14372164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14626288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -344,6 +334,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/liveServer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveServer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3036">
+          <caret line="138" column="20" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SecondTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -371,7 +385,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -394,7 +410,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -424,7 +442,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -484,13 +504,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image/SecondTest.js" />
-    <entry file="file://$PROJECT_DIR$/Test.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SecondTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -498,61 +511,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test.php">
+    <entry file="file://$USER_HOME$/Desktop/dmeng2.0.7/dmeng2.0/single-gift.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SecondTest.css">
+    <entry file="file://$USER_HOME$/Desktop/dmeng2.0.7/dmeng2.0/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SecondTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="39" column="10" selection-start-line="35" selection-start-column="0" selection-end-line="48" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawTest.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RawTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="45" />
-          <folding>
-            <marker date="1502286371365" expanded="true" signature="1535:1756" ph="..." />
-            <marker date="1502286371365" expanded="true" signature="1787:2086" ph="..." />
-            <marker date="1502286371365" expanded="true" signature="1852:2086" ph="..." />
-            <marker date="1502286371365" expanded="true" signature="2386:2510" ph="..." />
-            <marker date="1502286371365" expanded="true" signature="2409:2510" ph="..." />
-            <marker date="1502286371365" expanded="true" signature="2602:3193" ph="..." />
-            <marker date="1502286371365" expanded="true" signature="2714:3164" ph="..." />
-            <marker date="1502286371365" expanded="true" signature="2847:3131" ph="..." />
-            <marker date="1502286371365" expanded="true" signature="2975:3094" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiveServer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="138" column="20" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -564,11 +533,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RawTest.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RawTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SecondTest.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiveServer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="136" column="18" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/liveServer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="194">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SecondTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="187" column="43" selection-start-line="187" selection-start-column="43" selection-end-line="187" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

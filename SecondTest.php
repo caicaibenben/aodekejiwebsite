@@ -1,55 +1,23 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Bootstrap 3 的多级下拉菜单示例</title>
-    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-    <link rel="stylesheet" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
-    <script type="text/javascript" src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="SecondTest.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6406a6c571b61311ef059706c7273018"></script>
+    <title>地图展示</title>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <h2>Bootstrap 3多级下拉菜单</h2>
-        <hr>
-        <div class="dropdown">
-            <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary" data-target="#"
-               href="javascript:;">
-                全部 <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu multi-level " role="menu" aria-labelledby="dropdownMenu">
-                <?php
-                   $chargeSite =array(
-                       "山东"=>array(
-                            "济南"=>array("历城","历下"),
-                            "济宁"=>array("曲阜"),
-                            "临沂"=>array("兰山","河东","罗庄"),
-                       ),
-                       "河南"=>array(
-                            "开封"=>array("鼓楼","兰考"),
-                       ),
-                       "北京"=>array("朝阳","海淀"),
-                       "雄县"
-                   );
-
-                ?>
-                <li><a href="javascript:;">北京</a></li>
-                <li class="dropdown-submenu ">
-                    <a href="javascript:;">山东</a>
-                    <ul class="dropdown-menu ">
-                        <li><a  href="javascript:;">济南</a></li>
-                        <li class="dropdown-submenu ">
-                            <a href="javascript:;">临沂</a>
-                            <ul class="dropdown-menu ">
-                                <li><a href="javascript:;">河东</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+<div id="allmap"></div>
 </body>
 </html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
