@@ -140,18 +140,20 @@
     points[2]=new BMap.Point(117.966885 ,35.278489 );
     points[3]=new BMap.Point(119.147483 ,35.131858 );
 
-    // 百度地图初始化
-    var map = new BMap.Map("siteMap");    // 创建Map实例
-    map.centerAndZoom(new BMap.Point(116.404, 39.915), 12);  // 初始化地图,设置中心点坐标和地图级别
-    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
-    //map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
-    function myFun(result){
-        var cityName = result.name;
-        map.setCenter(cityName);
+    function initMap() {
+        // 百度地图初始化
+        var map = new BMap.Map("siteMap");    // 创建Map实例
+        map.centerAndZoom(new BMap.Point(116.404, 39.915), 12);  // 初始化地图,设置中心点坐标和地图级别
+        map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+        //map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+        function myFun(result){
+            var cityName = result.name;
+            map.setCenter(cityName);
+        }
+        var myCity = new BMap.LocalCity();
+        myCity.get(myFun);//获取定位地址之后必须通过get来回掉函数
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
     }
-    var myCity = new BMap.LocalCity();
-    myCity.get(myFun);//获取定位地址之后必须通过get来回掉函数
-    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
 
     //百度地图显示更新 points并加注标签
     function refreshMap(points) {
@@ -170,7 +172,7 @@
         }
     }
 
-
+    refreshMap(points);
     //特定点的地图显示
     function refreshMapPoint(points,point) {
         console.log("refresh");
@@ -184,8 +186,17 @@
         map.enableScrollWheelZoom(true);
         for(var i=0;i<points.length;i++){
             if(points[i]==point){
-                alert("ok");
-                var myIcon = new BMap.Icon("image/biaozhumy.png", new BMap.Size(34,24));
+                var myIcon = new BMap.Icon("E:/Project/PHP/aodekejiwebsite/image/biaozhumy.png", new BMap.Size(230, 250), {
+                    // 指定定位位置。
+                    // 当标注显示在地图上时，其所指向的地理位置距离图标左上
+                    // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
+                    // 图标中央下端的尖角位置。
+                    anchor: new BMap.Size(10, 25),
+                    // 设置图片偏移。
+                    // 当您需要从一幅较大的图片中截取某部分作为标注图标时，您
+                    // 需要指定大图的偏移位置，此做法与css sprites技术类似。
+                    //imageOffset: new BMap.Size(0, 0 - index * 25)   // 设置图片偏移
+                });
                 var marker_point = new BMap.Marker(point,{icon:myIcon});
                 map.addOverlay(marker_point);
                 continue;
@@ -195,7 +206,6 @@
         }
     }
     $("#searchbtn").click(function(){
-        alert("ok");
         var point=points[0];
         refreshMapPoint(points,point);
     });
