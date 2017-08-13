@@ -6,7 +6,8 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);//要求结果为字符串且输出�
 curl_setopt($ch, CURLOPT_POST, 1);//post提交方式
 $data = curl_exec($ch);//运行curl
 curl_close($ch);
-//$site=json_decode($data, true);
-//var_dump($data);
-exit(json_encode($data));
+$site=json_decode($data, true);
+var_dump($site);
+//exit(json_encode($data));
+//echo "RawTest";
 ?>

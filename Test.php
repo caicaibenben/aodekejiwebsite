@@ -232,8 +232,9 @@
            {},
             function(data,status){
                 //var obj = Json.parse(data);
-                var obj = eval(data);
-                console.log(obj);
+                //var obj = eval(data);
+                console.log(data);
+                alert(status);
             });
     });
 </script>
