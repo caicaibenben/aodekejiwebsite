@@ -231,9 +231,9 @@
         $.post("RawTest.php",
            {},
             function(data,status){
-                //var obj = Json.parse(data);
+                var obj = JSON.parse(data);
                 //var obj = eval(data);
-                console.log(data);
+                console.log(obj);
                 alert(status);
             });
     });

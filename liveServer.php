@@ -18,6 +18,8 @@
     <script src="LiveServer.js"></script>
     <link rel="stylesheet" href="LiveServer.css" type="text/css">
     <link rel="stylesheet" href="base.css" type="text/css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6406a6c571b61311ef059706c7273018"></script>
+    <script type="application/javascript" src="LiveServerSiteMap.js"></script>
 </head>
 <body>
 <!--1.首页标签-->
@@ -123,13 +125,13 @@
         </div>
     </section>
     <!--    4.站点地图显示-->
-    <section >
+<section >
     <!--站点地图显示    -->
     <div class="col-md-12" >
-        <div class="col-md-5 col-md-offset-1" style="background-color: #e6e6e6;width: 600px;height: 500px">
+        <div class="col-md-5 col-md-offset-1" style="background-color: #e6e6e6;">
             <!--地图显示-->
-            <div style="padding: 4px 4px 4px 4px;border: 1px solid black">
-                <img src="image/site.png" class="img-responsive" width="600px" height="500px">
+            <div id="siteMap">
+                <!--显示百度地图-->
             </div>
         </div>
         <div class="col-md-3 col-md-offset-1" style="background-color: #e6e6e6" >
@@ -180,64 +182,35 @@
                                     ?>
                             </div><!-- /btn-group -->
                             <input type="text" class="form-control" placeholder="请输入你要查询的站点">
-                            <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">
+                            <span class="input-group-btn" id="searchbtn">
+                                    <button id="searchbtn" class="btn btn-default" type="button">
                                         <span class="glyphicon glyphicon-search"> </span>
                                     </button>
-                                </span>
+                            </span>
                         </div><!-- /input-group -->
                     </div><!-- /.col-lg-6 -->
                 </form>
             </div>
             <!--站点列表-->
             <div style="margin-top: 100px">
-                <div class="list-group">
-                    <a href="javascript:;" class="list-group-item active " data-toggle="collapse"
-                       data-target="#demo0">
-                        <h4 class="list-group-item-heading">
-                            紫禁城小区
-                        </h4>
-                    </a>
-                    <div id="demo0" class="collapse">
-                        详细地址：1111111111111111111111111111111111111
-                        11111111111111111111111111111111111111111111111
-                    </div>
-                    <a href="javascript:;" class="list-group-item active " data-toggle="collapse"
-                       data-target="#demo1">
-                        <h4 class="list-group-item-heading">
-                            紫禁城小区
-                        </h4>
-                    </a>
-                    <div id="demo1" class="collapse">
-                        详细地址：1111111111111111111111111111111111111
-                        11111111111111111111111111111111111111111111111
-                    </div>
-                    <a href="javascript:;" class="list-group-item " data-toggle="collapse"
-                       data-target="#demo2">
-                        <h4 class="list-group-item-heading">
-                            紫禁城小区
-                        </h4>
-                    </a>
-                    <div id="demo2" class="collapse">
-                        详细地址：1111111111111111111111111111111111111
-                        11111111111111111111111111111111111111111111111
-                    </div>
-                    <a href="javascript:;" class="list-group-item" data-toggle="collapse"
-                       data-target="#demo3">
-                        <h4 class="list-group-item-heading">
-                            紫禁城小区
-                        </h4>
-                        <div id="demo3" class="collapse">
-                            详细地址：1111111111111111111111111111111111111
-                            11111111111111111111111111111111111111111111111
-                        </div>
-                    </a>
-
+                <div id="list-group" class="list-group pre-scrollable">
+                    <!--                    <a href="javascript:;" class="list-group-item active " data-toggle="collapse"-->
+                    <!--                       data-target="#demo0">-->
+                    <!--                        <h4 class="list-group-item-heading">-->
+                    <!--                            紫禁城小区-->
+                    <!--                        </h4>-->
+                    <!--                    </a>-->
+                    <!--                    <div id="demo0" class="collapse">-->
+                    <!--                        详细地址：1111111111111111111111111111111111111-->
+                    <!--                        11111111111111111111111111111111111111111111111-->
+                    <!--                    </div>-->
+                    <!--                    <a id="forSiteList"></a>-->
                 </div>
 
             </div>
         </div>
     </div>
+
     </section>
     <!--    5.页脚-->
     <footer class="index_footer">
