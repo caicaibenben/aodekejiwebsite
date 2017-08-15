@@ -31,9 +31,9 @@
         <ul class="nav navbar-nav col-md-12">
             <li class="col-md-2"><a href="index.php" target="_self">首页</a></li>
             <li class="col-md-2"><a href="liveServer.php" target="_self" style="color: #ec8400">生活缴费</a></li>
-            <li class="col-md-2"><a href="#">企业采购</a></li>
-            <li class="col-md-2"><a href="#">社区电商</a></li>
-            <li class="col-md-2"><a href="#">增值服务</a></li>
+            <li class="col-md-2"><a href="enterprisepurchasing.php">企业采购</a></li>
+            <li class="col-md-2"><a href="communityES.php">社区电商</a></li>
+            <li class="col-md-2"><a href="addvalueservices.php">增值服务</a></li>
         </ul>
       </div>
     <div class="adkj_menu_border"></div>
