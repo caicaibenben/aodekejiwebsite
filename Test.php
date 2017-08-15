@@ -11,7 +11,7 @@
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="Test.js"></script>
+
     <link rel="stylesheet" href="Test.css" type="text/css">
     <link rel="stylesheet" href="base.css" type="text/css">
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6406a6c571b61311ef059706c7273018"></script>
@@ -32,12 +32,12 @@
                 <form class="bs-example bs-example-form" role="form">
                     <div class="col-lg-12">
                         <div class="input-group">
-                            <div class="input-group-btn" id="dropdownmutilmenu">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <div class="input-group-btn dropdown" id="dropdownmutilmenu">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdownbtn">
                                     全部
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu multi-level " role="menu" aria-labelledby="dropdownMenu">
+                                <ul class="dropdown-menu multi-level " role="menu" aria-labelledby="dropdownMenu" id="dropdownmenulist">
                                     <?php
                                     $chargeSite = array(
                                         "山东" => array(
@@ -101,6 +101,14 @@
             </div>
         </div>
     </div>
+    <script type="application/javascript" src="Test.js?ver=1"></script>
 </section>
 </body>
+<!--<script>-->
+<!--    $('#dropdownmenulist').on('click','a',function () {-->
+<!--        //$('#dropdownMenu').val($(this).text());-->
+<!--        $('#dropdownbtn').text($(this).text());-->
+<!--        $('#dropdownbtn').append('<span class="caret"></span>');-->
+<!--    });-->
+<!--</script>-->
 </html>
